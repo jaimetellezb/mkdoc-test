@@ -1,0 +1,102 @@
+site_name: Widget ListView Documentation
+site_description: Comprehensive documentation for the ListView Widget, a versatile component for displaying lists of items.
+site_author: Your Name
+site_url: https://yourdomain.com
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+    - header.autohide
+    - content.code.annotate
+    - palette.toggle
+  # palette:
+  #   # - media: "(prefers-color-scheme: light)"
+  #   #   scheme: default
+  #   #   primary: indigo
+  #   #   accent: indigo
+  #   # - media: "(prefers-color-scheme: dark)"
+  #   #   scheme: slate
+  #   #   primary: indigo
+  #   #   accent: indigo
+
+  #   scheme: default # Esto permite el cambio automático basado en las preferencias del sistema
+  #   primary: indigo
+  #   accent: indigo
+  #   toggle:
+  #     icon: material/lightbulb
+  #     name: Switch between light and dark mode
+  palette:
+    - scheme: default # Modo claro
+      primary: indigo
+      accent: pink
+      background: white
+      toggle:
+        icon: material/weather-sunny # Icono que aparece en modo claro
+        name: Switch to dark mode # Texto del toggle en modo claro
+    - scheme: slate # Modo oscuro
+      primary: indigo
+      accent: pink
+      background: black
+      toggle:
+        icon: material/weather-night # Icono que aparece en modo oscuro
+        name: Switch to light mode # Texto del toggle en modo oscuro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    #logo: material/library_books
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.ico
+
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Installation: installation.md
+  - Usage:
+      - Basic Usage: usage.md
+      - Advanced Usage: usage_advanced.md
+  - Customization: customization.md
+  - API Reference: api_reference.md
+  - Troubleshooting: troubleshooting.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+
+plugins:
+  - search
+  #- mkdocs-material
+  - awesome-pages:
+      collapse_single_pages: true
+  #- mkdocs-git-revision-date-localized-plugin:
+  #    enable_creation_date: true
+  #- mkdocs-minify-plugin
+  #- mkdocs-glightbox:
+  #    auto_embed: true
+  #- mkdocs-mermaid2-plugin
+
+extra_css:
+  - css/custom.css
+
+extra_javascript:
+  - js/custom.js
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - pymdownx.emoji:
+      emoji_generator: python/name:pymdownx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true

@@ -1,0 +1,13 @@
+site_name: Documentación de ejemplo
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - search.highlight
+    - search.suggest
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Customization: customization.md
